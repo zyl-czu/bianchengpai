@@ -17,7 +17,8 @@ view:
     pageSize: 20
     cdnImgStyle:
     websiteRecord: 苏ICP备2025176864号-1
-    wxLoginUrl: http://weixin.qq.com/r/WxwpMefE-rqBraNS90lJ
+    # wxLoginUrl: http://weixin.qq.com/r/WxwpMefE-rqBraNS90lJ
+    wxLoginUrl: http://weixin.qq.com/r/mp/ZhYoMGzEyTG2rShT90N0
     host: http://127.0.0.1:${server.port}
     welcomeInfo: 欢迎来到技术派，戳<a href="/article/detail/15">技术派全方位视角解读</a>了解我们
     oss:

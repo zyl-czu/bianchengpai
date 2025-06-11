@@ -62,7 +62,7 @@ public class UserAiServiceImpl implements UserAiService {
             }
         } else {
             // 有星球走星球，无星球再走公众号
-            // 微信公众号登录用户 +5次
+            // 微信公众号登录用户 +10次
             if (UserAiStrategyEnum.WECHAT.match(strategy)) {
                 cnt += aiConfig.getMaxNum().getWechat();
             }

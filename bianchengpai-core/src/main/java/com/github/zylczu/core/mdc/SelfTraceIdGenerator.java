@@ -88,6 +88,7 @@ public class SelfTraceIdGenerator {
     private static String getProcessId() {
         RuntimeMXBean runtime = ManagementFactory.getRuntimeMXBean();
         String processId = runtime.getName().split("@")[0];
+        // 不足5位，左边补0
         return String.format("%05d", Integer.parseInt(processId));
     }
 

@@ -1,3 +1,4 @@
+
 server:
   port: 8080
   servlet:
@@ -44,7 +45,7 @@ paicoding:
   sensitive: # 敏感词校验相关配置
     enable: true
     deny: 妈妈 # 自定义的敏感词，英文逗号分割
-    allow: 国,制作,码,亚洲,中国,公司,简历,性,国研,鬼,国庆,用户,扑克 # 自定义的非敏感词，英文逗号分割
+    allow: 简历,性,国研,鬼,国庆,用户,扑克 # 自定义的非敏感词，英文逗号分割
   jwt:
     issuer: pai_coding # 签发者
     secret: hello_world # 签名密钥
@@ -92,4 +93,4 @@ knife4j:
 logging:
   level:
     # com.github.zylczu.service.rank.service.impl.*: debug # 指定具体包下的日志输出级别
-    com.github.zylczu.*: debug # 指定具体包下的日志输出级别
+    com.github.zylczu.*: info # 指定具体包下的日志输出级别

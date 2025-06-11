@@ -41,6 +41,8 @@ public class DynamicConfigBinder {
         ConfigurationProperties propertiesAno = bindable.getAnnotation(ConfigurationProperties.class);
         if (propertiesAno != null) {
             BindHandler bindHandler = getBindHandler(propertiesAno);
+            // 这个方法会从Binder对象的PropertySources中读取指定前缀的属性，并将这些属性绑定到bindable对象上。
+            // 不会重新加载配置，只会绑定配置，前面要手动刷新reloadConfig
             getBinder().bind(propertiesAno.prefix(), bindable, bindHandler);
         }
     }

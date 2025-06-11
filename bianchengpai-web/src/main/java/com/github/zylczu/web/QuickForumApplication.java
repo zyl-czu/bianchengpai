@@ -51,10 +51,7 @@ public class QuickForumApplication implements WebMvcConfigurer, ApplicationRunne
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-
-
         registry.addInterceptor(globalViewInterceptor).addPathPatterns("/**");
-
     }
 
     @Override

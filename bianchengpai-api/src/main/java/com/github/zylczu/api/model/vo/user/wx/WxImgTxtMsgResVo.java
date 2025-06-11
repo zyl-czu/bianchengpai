@@ -21,10 +21,10 @@ import java.util.List;
 @JacksonXmlRootElement(localName = "xml")
 public class WxImgTxtMsgResVo extends BaseWxMsgResVo {
     @JacksonXmlProperty(localName = "ArticleCount")
-    private Integer articleCount;
+    private Integer articleCount;  // 图文消息个数；当用户发送文本、图片、语音、视频、图文、地理位置这六种消息时，开发者只能回复1条图文消息；其余场景最多可回复8条图文消息
     @JacksonXmlElementWrapper(localName = "Articles")
     @JacksonXmlProperty(localName = "item")
-    private List<WxImgTxtItemVo> articles;
+    private List<WxImgTxtItemVo> articles;  // 图文消息信息，注意，如果图文数超过限制，则将只发限制内的条数
 
     public WxImgTxtMsgResVo() {
         setMsgType("news");

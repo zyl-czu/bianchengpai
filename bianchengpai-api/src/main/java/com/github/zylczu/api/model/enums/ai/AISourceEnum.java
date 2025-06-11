@@ -48,7 +48,12 @@ public enum AISourceEnum {
             return true;
         }
     },
+    /**
+     * 深度求索 AI
+     */
+    DEEP_SEEK(6, "DeepSeek")
     ;
+
 
     private String name;
     private Integer code;

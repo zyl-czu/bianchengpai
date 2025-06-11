@@ -10,9 +10,9 @@ image:
   cdn-host: https://imgs.hhui.top/
   oss:
     type: ali
-    endpoint:
+    endpoint: https://oss-cn-beijing.aliyuncs.com
     prefix: bianchengpai/
-    ak:
-    sk:
-    bucket:
+
+    bucket: zylzyl
     host:
+

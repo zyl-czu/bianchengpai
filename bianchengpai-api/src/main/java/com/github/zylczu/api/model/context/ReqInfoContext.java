@@ -1,6 +1,7 @@
 package com.github.zylczu.api.model.context;
 
 import com.alibaba.ttl.TransmittableThreadLocal;
+
 import com.github.zylczu.api.model.vo.seo.Seo;
 import com.github.zylczu.api.model.vo.user.dto.BaseUserInfoDTO;
 import lombok.Data;
@@ -80,6 +81,11 @@ public class ReqInfoContext {
         private Seo seo;
 
         private String deviceId;
+
+        /**
+         * 当前聊天的会话id
+         */
+        private String chatId;
 
         @Override
         public String getName() {

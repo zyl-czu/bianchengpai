@@ -190,7 +190,10 @@
       // 加载推荐列表
       let params = {
           "articleId": articleId,
-          "page": 1
+          "page": 1,
+          "triggerThreshold": 100 // 触发加载的阈值
+
+
       }
       loadMore("#articleList", "/article/api/recommend", params, "articleList", function() {
         if($('#articleList:has(div)').length == 0) {

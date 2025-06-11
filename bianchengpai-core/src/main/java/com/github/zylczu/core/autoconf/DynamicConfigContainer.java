@@ -128,6 +128,8 @@ public class DynamicConfigContainer implements EnvironmentAware, ApplicationCont
     /**
      * 支持配置的动态刷新
      */
+    // reloadConfig方法会从数据库中重新加载配置属性，并更新缓存。
+    // 然后，refreshConfig方法会重新绑定这些属性到标注了@ConfigurationProperties的Bean上。
     private void refreshConfig() {
         applicationContext.getBeansWithAnnotation(ConfigurationProperties.class).values().forEach(bean -> {
             Bindable<?> target = Bindable.ofInstance(bean).withAnnotations(AnnotationUtils.findAnnotation(bean.getClass(), ConfigurationProperties.class));

@@ -6,10 +6,9 @@ image:
   oss:
     type: local
     prefix: bianchengpai/
-    endpoint:
-    ak:
-    sk:
-    bucket:
+    endpoint: https://oss-cn-beijing.aliyuncs.com
+
+    bucket: zylzyl
     host: https://cdn.tobebetterjavaer.com/
 
 spring:

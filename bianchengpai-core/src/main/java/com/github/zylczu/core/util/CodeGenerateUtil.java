@@ -28,6 +28,13 @@ public class CodeGenerateUtil {
                 // 100-200之间的数字作为关键词回复，不用于验证码
                 return genCode(cnt);
             }
+            // "%0" + CODE_LEN + "d" 是一个格式化字符串，其中：
+            //% 表示格式说明符的开始。
+            //0 表示使用前导零填充。
+            //CODE_LEN 表示字符串的总长度。
+            //d 表示参数是一个十进制整数。
+            //num 是要格式化的整数。
+            //String.format 方法根据格式化字符串的要求，将 num 转换为一个三位数的字符串，如果 num 的位数不足三位，则在前面补零。
             return String.format("%0" + CODE_LEN + "d", num);
         } else {
             return specialCodes.get(cnt);
