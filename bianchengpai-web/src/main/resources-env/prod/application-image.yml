@@ -12,7 +12,8 @@ image:
     type: ali
     endpoint: https://oss-cn-beijing.aliyuncs.com
     prefix: bianchengpai/
-
+    ak:
+    sk:
     bucket: zylzyl
     host:
 

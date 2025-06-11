@@ -1,13 +1,13 @@
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/${database.name}?useUnicode=true&allowPublicKeyRetrieval=true&autoReconnect=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
-    username: zhuyulong-czu
-    password: XuXu08140277
+    username:
+    password:
   redis:
     isOpen: true
     host: localhost
     port: 6379
-    password: XuXu08140277
+    password:
 
 # elasticsearch配置
 elasticsearch:
